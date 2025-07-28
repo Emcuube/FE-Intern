@@ -285,7 +285,7 @@ const UserDetail = () => {
               </div>
               
               {/* Table Body with ScrollArea */}
-              <ScrollArea className="h-[400px]">
+              <ScrollArea className="h-[525px]">
                 <div className="divide-y divide-gray-200">
                   {paginatedCampaigns.map((campaign, index) => {
                     const campaignId = `${startIndex + index}`;

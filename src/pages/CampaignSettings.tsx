@@ -311,15 +311,6 @@ const CampaignSettings = () => {
             </div>
           </div>
         </div>
-
-        {/* Fixed Footer */}
-        <div className="bg-white border-t border-gray-200 px-6 py-4 flex-shrink-0">
-          <div className="flex justify-end">
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-8">
-              Lưu thay đổi thành công
-            </Button>
-          </div>
-        </div>
       </div>
     </div>
   );

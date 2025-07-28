@@ -117,7 +117,7 @@ const UserDetail = () => {
       
       <div className="flex-1">
         {/* Header with Breadcrumb */}
-        <div className="bg-white border-b border-gray-200 px-6 py-4">
+        <div className="bg-white border-b border-gray-200 px-6 py-1.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Link to="/users" className="text-gray-400 hover:text-gray-600">

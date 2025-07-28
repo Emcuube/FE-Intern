@@ -14,9 +14,9 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import CampaignSidebar from '@/components/CampaignSidebar';
-import customersDetailData from '../../customersdetail.json';
-import customersData from '../../customers.json';
-import customerNotesData from '../../customersnote.json';
+import customersDetailData from '../data/customersdetail.json';
+import customersData from '../data/customers.json';
+import customerNotesData from '../data/customersnote.json';
 
 const CustomerDetail = () => {
   const { customerName } = useParams();

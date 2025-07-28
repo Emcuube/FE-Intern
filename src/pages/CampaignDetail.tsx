@@ -21,7 +21,7 @@ import {
   DialogTitle,
   DialogFooter,
 } from '@/components/ui/dialog';
-import customersData from '../../customers.json';
+import customersData from '../data/customers.json';
 
 const CampaignDetail = () => {
   const { campaignName } = useParams();

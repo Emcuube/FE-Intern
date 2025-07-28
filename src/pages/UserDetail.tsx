@@ -10,7 +10,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { ArrowLeft, Search, Lock, Edit, ChevronLeft, ChevronRight, Eye, EyeOff, X } from 'lucide-react';
 import CampaignSidebar from '@/components/CampaignSidebar';
 import usersData from '../../user.json';
-import campaignsData from '../../campaigns.json';
+import campaignsData from '../data/campaigns.json';
 
 const UserDetail = () => {
   const { userName } = useParams();

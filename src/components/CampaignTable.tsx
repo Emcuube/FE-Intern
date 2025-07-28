@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import campaignsData from '../data/campaigns.json';
 import { useNavigate } from 'react-router-dom';
 import { ChevronDown, Edit, Trash2, MoreHorizontal, ArrowUpDown, Filter, Users, Eye, EyeOff } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -48,12 +49,13 @@ interface Campaign {
   };
 }
 
-interface CampaignTableProps {
-  campaigns: Campaign[];
-  searchTerm: string;
-}
+const CampaignTable = () => {
+  const [campaigns, setCampaigns] = useState<Campaign[]>([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
-const CampaignTable = ({ campaigns, searchTerm }: CampaignTableProps) => {
+  useEffect(() => {
+    setCampaigns(campaignsData);
+  }, []);
   const navigate = useNavigate();
   const [sortField, setSortField] = useState<string>('');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');

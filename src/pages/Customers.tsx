@@ -6,7 +6,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Checkbox } from '@/components/ui/checkbox';
 import { Copy, Search, Edit } from 'lucide-react';
 import CampaignSidebar from '@/components/CampaignSidebar';
-import customersData from '../../customers.json';
+import customersData from '../data/customers.json';
 
 const Customers = () => {
   const navigate = useNavigate();
